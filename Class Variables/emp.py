@@ -17,7 +17,7 @@ class Employee():
 
   def apply_raise(self):
     
-    #2. Within a Class, attributes can be referred to with "self" which makes it referrence the value for that instance, or the Class_Name, which makes it referrence the value for the Class itself. Using "self" is more flexible and recommended when you need to localize the attributes, if not, use Class_Name.
+    #2. Within a Class, attributes can be referred to with "self" which makes it referrence the value for that instance, or the Class_Name, which makes it referrence the value for the Class itself. Using "" is more flexible and recommended when you need to localize the attributes, if not, use Class_Name.
     self.pay = int(self.pay * self.raise_amount)
     #self.pay = int(self.pay * Employee.raise_amount)
     return self.pay
@@ -30,3 +30,7 @@ emp2 = Employee("Osakpolor", "Osayande", 60000)
 
 #5. After instantiating 2 employess
 print(Employee.emp_num)
+
+#6. Accessing raise_amt for a Class and it's instances
+print(Employee.raise_amount)
+print(emp2.raise_amount)
